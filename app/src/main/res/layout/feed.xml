@@ -26,42 +26,46 @@
             android:layout_weight="10"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/menu"
             android:layout_weight="1"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/menu" />
+            tools:ignore="MissingConstraints" />
+
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="80"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ScrollView
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-        </ScrollView>
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pessoas"/>
     </LinearLayout>
+
+
+
+    </ScrollView>
+
+
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_gravity="center"
-        android:src="@drawable/linha"/>
-
-    </LinearLayout>
+         android:layout_width="match_parent"
+         android:layout_height="5dp"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:layout_gravity="center"
+         android:background="@color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
