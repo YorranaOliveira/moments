@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:background="#60FFFFFF"
         android:gravity="center_vertical"
-        android:/>
+        />
 
     <TextView
         android:id="@+id/textView2"
