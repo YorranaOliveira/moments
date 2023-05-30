@@ -7,76 +7,183 @@
     android:background="#F8CFFF"
     android:orientation="vertical">
 
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Explorar"
-        android:textColor="#FFFFFF"
-        android:textSize="19sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Explorar"
+            android:layout_weight="10"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:src="@drawable/menu_bolinha"/>
+
+    </LinearLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#60FFFFFF"
-        android:gravity="center_vertical"
-        />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="200dp"
-        android:layout_height="36dp"
-        android:layout_gravity="center_horizontal"
-        android:text="Search"
-        android:textColor="#8AFFFFFF"
-        android:textSize="19sp"
+        android:hint="Search"
+        android:textColorHint="#8AFFFFFF"
+        android:padding="10dp"
+        android:textSize="18dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="90dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="278dp"
-        android:layout_height="37dp"
-        android:text="Favorite as imagens que lhe inspiram "
-        android:textColor="#FFFFFF"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="228dp"
-        android:layout_height="78dp"
-        android:text="Procure, se inspire."
-        android:textSize="14dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="214dp" />
-
-    <TextView
-        android:layout_width="228dp"
-        android:layout_height="78dp"
-        android:layout_gravity="center_vertical"
-        android:text="É aqui onde você encontra grandes artes para a sua vida!"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="20dp" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/white" />
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite as imagens que lhe inspiram "
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Procure, se inspire.\nÉ aqui onde você encontra grandes artes para a sua vida!"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="214dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha Semanal"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <TextView
+            android:id="@id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nossos favoritos escolhido do Moment’s"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="214dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/img"/>
+            <TextView
+                android:id="@id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_biellmx"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:src="@drawable/img_1"/>
+            <TextView
+                android:id="@id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_biellmx"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/img_2"/>
+            <TextView
+                android:id="@id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_biellmx"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
