@@ -26,42 +26,101 @@
             android:layout_weight="10"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/menu"
             android:layout_weight="1"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/menu" />
+            tools:ignore="MissingConstraints" />
+
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="90">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="80"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-        </ScrollView>
-    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/pessoas"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="330dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/curacao"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/marcapag"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/caradabia"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="ann.gomeez"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/paisagem"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_gravity="center"
-        android:src="@drawable/linha"/>
-
-    </LinearLayout>
+         android:layout_width="match_parent"
+         android:layout_height="5dp"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:layout_gravity="center"
+         android:background="@color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -96,13 +155,13 @@
             android:src="@drawable/adicionar"/>
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="35dp"
             android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/gostar"/>
+            android:src="@drawable/coracaocomponto"/>
 
         <ImageView
             android:layout_width="60dp"

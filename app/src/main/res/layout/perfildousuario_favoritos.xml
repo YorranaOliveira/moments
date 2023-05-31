@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8CFFF"
     android:orientation="vertical"
-    >
+    android:background="#F8CFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,35 +14,33 @@
         android:paddingRight="20dp"
         android:layout_weight="5"
         android:orientation="horizontal">
-
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_gravity="right"
             android:layout_weight="1"
+            android:layout_gravity="right"
             android:contentDescription="TODO" />
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center_horizontal"
-            android:padding="20dp"
             android:text="@string/humanocalvo"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@color/white"
             android:textSize="16sp"
+            android:layout_weight="2"
+            android:padding="20dp"
+            android:gravity="center_horizontal"
             tools:ignore="MissingConstraints,TextContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="25dp"
             android:layout_height="match_parent"
+            app:srcCompat="@drawable/menu"
             android:layout_weight="1"
-            android:gravity="center_vertical"
             android:padding="20dp"
-            app:srcCompat="@drawable/menu" />
+            android:gravity="center_vertical"/>
     </LinearLayout>
 
     <LinearLayout
@@ -91,10 +88,11 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="35dp"
                         android:text="11"
+                        android:layout_marginLeft="35dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        />
 
                     <TextView
                         android:id="@+id/textView4"
@@ -102,7 +100,8 @@
                         android:layout_height="wrap_content"
                         android:text="Publicações"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        />
 
 
                 </LinearLayout>
@@ -116,20 +115,20 @@
                         android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="35dp"
-                        android:gravity="center_vertical"
                         android:text="23"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"/>
 
                     <TextView
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:text="Seguidores"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        android:layout_marginLeft="5dp"/>
 
 
                 </LinearLayout>
@@ -143,20 +142,20 @@
                         android:id="@+id/textView7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="35dp"
-                        android:gravity="center_vertical"
                         android:text="14"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="center_vertical"/>
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:text="Seguindo"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        android:layout_marginLeft="5dp"/>
 
 
                 </LinearLayout>
@@ -180,11 +179,12 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:text="Sou belo, rico e quase careca. Pra quê melhor? 🤘🤘"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#B4000000"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -196,29 +196,31 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:text="Galeria"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textColor="#B4000000"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                app:srcCompat="@drawable/bolinha"
                 android:layout_marginLeft="10dp"
-                android:gravity="center_vertical"
-                app:srcCompat="@drawable/bolinha" />
+                android:gravity="center_vertical"/>
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:text="Favoritos"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#B4000000"
-                android:textSize="20sp" />
+                android:textColor="	#000000"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
 
 
         </LinearLayout>
@@ -230,7 +232,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:layout_weight="80" >
+        android:layout_weight="80">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -245,11 +247,11 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:src="@drawable/foto" />
+                    android:gravity="top"
+                    android:layout_weight="10"
+                    android:src="@drawable/poste" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -257,7 +259,15 @@
                     android:layout_weight="1"
                     android:gravity="right"
                     android:padding="10dp"
-                    android:src="@drawable/foto1" />
+                    android:src="@drawable/academia_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:src="@drawable/mar_2" />
 
             </LinearLayout>
 
@@ -270,18 +280,26 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:padding="10dp"
                     android:layout_gravity="left"
                     android:layout_weight="1"
-                    android:padding="10dp"
-                    android:src="@drawable/foto2" />
+                    android:src="@drawable/the_chosen_1" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="right"
                     android:padding="10dp"
-                    android:src="@drawable/foto3" />
+                    android:gravity="right"
+                    android:src="@drawable/plat_o_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="right"
+                    android:src="@drawable/jesus_1" />
 
             </LinearLayout>
 
@@ -294,28 +312,21 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:padding="10dp"
                     android:layout_gravity="left"
                     android:layout_weight="1"
-                    android:padding="10dp"
-                    android:src="@drawable/foto4" />
+                    android:src="@drawable/mapa_mental_1" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="right"
                     android:padding="10dp"
-                    android:src="@drawable/foto5" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:gravity="right"
-                    android:padding="10dp"
-                    android:src="@drawable/foto6" />
+                    android:src="@drawable/ney_1" />
 
             </LinearLayout>
+
 
         </LinearLayout>
 
@@ -325,7 +336,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_gravity="center"
-        android:background="@color/white" />
+        android:background="@color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -336,47 +347,47 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="35dp"
-            android:layout_gravity="center"
             android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:src="@drawable/casa" />
+            android:layout_gravity="center"
+            android:src="@drawable/casa"/>
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="35dp"
-            android:layout_gravity="center"
             android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:src="@drawable/procurar" />
+            android:layout_gravity="center"
+            android:src="@drawable/procurar"/>
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="35dp"
-            android:layout_gravity="center"
             android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:src="@drawable/adicionar" />
+            android:layout_gravity="center"
+            android:src="@drawable/adicionar"/>
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
             android:layout_weight="1"
             android:paddingLeft="1dp"
             android:paddingRight="1dp"
-            android:src="@drawable/coracaocomponto" />
+            android:layout_gravity="center"
+            android:src="@drawable/coracaocomponto"/>
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_gravity="center"
             android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:src="@drawable/alisson" />
+            android:layout_gravity="center"
+            android:src="@drawable/alisson"/>
 
 
     </LinearLayout>
